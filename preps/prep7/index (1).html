@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CS 343 Prep 7</title>
+
+</head>
+<body>
+  <form id="add-item">
+    <label for="color">Background color</label>
+    <input type="color" name="color">
+    <button type="button" name="change">Change background</button>
+    <br>
+    <label for="item-name">Item to add to list</label>
+    <input type="text" name="item-name" placeholder="Random item info">
+    <button type="button" name="generate">Add item</button>
+  </form>
+
+  <h1>Items:</h1>
+  <ul id="item-list"></ul>
+  
+  <script>
+    const body = document.getElementsByTagName('body')[0];
+    const form = document.getElementById('add-item');
+	const itemList = document.getElementById('item-list');
+
+    // YOUR SCRIPT HERE
+    // TODO: when "Change background" is clicked, change body's background color
+    form.change.addEventListener('click', function(event) {
+		const colorInput = form.color;
+		const selectedColor = colorInput.value;
+		body.style.backgroundColor = selectedColor;
+    });
+
+    // TODO: when "Add item" is clicked, create a <li> element and set
+    // its textContent to the form's text field's value. Then append the
+    // new item to the item-list.
+    form.generate.addEventListener('click', function(event) {
+		const itemNameInput = form['item-name'];
+		const itemName = itemNameInput.value.trim();
+
+		if (itemName) {
+			const newItem = document.createElement('li');
+			newItem.textContent = itemName;
+			itemList.appendChild(newItem);
+			itemNameInput.value = '';
+      }
+    });
+
+    // TODO: add an event listener on the form itself. If the submit event
+    // occurs, call preventDefault on the event. What does this do?
+    form.addEventListener('submit', function(event) {
+		event.preventDefault();
+    });
+
+  </script>
+</body>
+</html>

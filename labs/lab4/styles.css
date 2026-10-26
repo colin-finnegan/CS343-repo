@@ -1,0 +1,17 @@
+/* styles.css -- A starter style sheet for Lab 4
+ * author: Colin Finnegan
+ */
+
+/* TODO: Set the background color to wheat. This color uses the RGB combination
+ * of red = 223 (df), green = 210 (d2), and blue = 170 (aa). The values in
+ * parentheses are the hexadecimal equivalents. */
+body {
+  background: rgb(223, 210, 170);
+  font-family: serif;
+}
+
+/* TODO: Set the font family for headings to be the system's default sans-serif
+ * font. */
+h1, h2 {
+  font-family: sans-serif;
+}

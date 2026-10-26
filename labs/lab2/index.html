@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Colin Finnegan">
+	<meta name="description" content="Lab 2 submission">
+	<title>CS 343 Lab 2</title>
+</head>
+
+<body>
+	<header>
+		<h1>CS 343: Application Development</h1>
+		<h2>Spring 2025</h2>
+		<blockquote cite="https://uxdworld.com">
+			<p>"A user interface is like a joke. If you have to explain it, it's not that good."</p>
+			<p>- Martin LeBlanc</p>
+		</blockquote>
+	</header>
+	
+	<main>
+	<hr>
+	<section>
+		<h3 id="course-header"></h3>
+		<p>Learning to work with the tools and technologies that are used to build and
+  create web sites is both empowering and fun. With these tools, you can build
+  your own web sites and customize the experience of those you visit. You can
+  also create interactive applications for storing and manipulating personal or
+  enterprise data. And you can dynamically generate images and graphics to help
+  visualize data sets.</p>
+		<p>The goal of this course is to explore these technologies - HTML, CSS, and
+  Javascript - that define the structure, presentation, and interactions for
+  modern web development. In addition to covering the basics of how to use these
+  tools, we will explore guidelines to ensure the sites we create are accessible
+  for a variety of users, including users with disabilities. After completing
+  this course, you will have a solid foundation to continue learning more
+  advanced web development techniques.</p>
+		<dl>
+			<dt>Website:</dt>
+			<dd><a href="https://w3.cs.jmu.edu/kirkpams/343/">https://w3.cs.jmu.edu/kirkpams/343/</a></dd>
+			<dt>Time:</dt>
+			<dd>M/W/F 9:10 - 10:00 AM</dd>
+			<dt>Location:</dt>
+			<dd>King Hall 236</dd>
+			<dt>Textbook:</dt>
+			<dd><cite>Fundamentals of Web Development, 3rd Edition</cite></dd>
+		</dl>
+	</section>
+	
+	<hr>
+	
+	<section>
+		<h3 id="objectives-header"></h3>
+		<p>Following the successful completion of this course, students will be able to:</p>
+		<ol type="1">
+			<li>Summarize the key steps and processes for retrieving and displaying a web page.</li>
+			<li>Structure text documents as HTML and publish them on a server.</li>
+			<li>Apply accessibility standards to web documents.</li>
+			<li>Create and adapt CSS style sheets for consistent web site presentation and styling.</li>
+			<li>Use a web framework to create a modern, responsive web site.</li>
+			<li>Generate HTML content dynamically with Javascript.</li>
+			<li>Create handlers to detect and respond to user input events.</li>
+			<li>Store and retrieve data in client-side storage.</li>
+			<li>Build images dynamically using provided data.</li>
+			<li>Learn to consult a web framework documentation and tutorials for additional help.</li>
+		</ol>
+	</section>
+	
+	<hr>
+	
+	<section>
+		<h3 id="labs-header"></h3>
+		<p>The lab descriptions are available at the following links:</p>
+		<script>
+			document.write("<ul>");
+			for (let x = 1; x < 11; x++) 
+			{
+				document.write(`<li><a href="https://w3.cs.jmu.edu/kirkpams/343/labs/lab${x}.shtml">Lab ${x}</a></li>`);
+			}
+			document.write("</ul>");
+		</script>
+	</section>
+		<hr>
+		
+		<section>
+			<h3 id="description-header"></h3>
+			<p>Projects or topics in computer science which are of interest to the lower
+  division student. May be repeated for credit when course content changes.
+  Topics may vary. <em>Prerequisite: Fully admitted Computer Science majors or
+  minors only and students should consult the instructor prior to enrolling
+  for the course.</em></p>
+	</section>
+	</main>
+	
+	<hr>
+	
+	<footer id="logo-footer">
+		<img id="jmu-logo" src="jmu-logo-rgb-horiz-purple.png" alt="James Madison University logo in purple">
+	</footer>
+	
+	<script>
+	(function() {
+		document.getElementById("course-header").textContent = "Course Information";
+		document.getElementById("objectives-header").textContent = "Detailed Course Objectives";
+		document.getElementById("labs-header").textContent = "Lab Descriptions";
+		document.getElementById("description-header").textContent = "Course Catalog Description";
+		
+		let color = window.location.search.substring(1);
+		let footerImage = document.getElementById("jmu-logo");
+		let footerElement = document.getElementById("logo-footer");
+		
+		if (color === "black")
+		{
+			footerImage.src = "jmu-logo-rgb-horiz-black.png";
+			footerImage.alt = "James Madison University logo in black";
+		} 
+		
+		else if (color === "none") 
+		{
+			footerElement.innerHTML = "<p>No logo color specified</p>";
+		}
+	
+	})();
+	</script>
+	</body>
+</html>

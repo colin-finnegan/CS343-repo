@@ -1,0 +1,165 @@
+<!-- Lines like this are HTML comments. You can delete them if you want but
+     if you leave them, they must not affect the result. Indented lines are
+     hints regarding the nesting of the HTML elements. -->
+
+<!-- Create an HTML header using the author (your name), description
+     ("Lab 2 submission"), and charset ("UTF-8") meta tags. Add a title of
+     "CS 343 Lab 2". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CS 343 Lab 2</title>
+</head>
+</html>
+<!-- Start of the <body> -->
+
+<!-- Wrap the title, subtitle, and blockquote inside a <header> element -->
+
+  <!-- Page title and subtitle heading elements (level 1 and level 2) -->
+  CS 343: Application Development
+  Spring 2025
+
+  <!-- Block quotation. Use an attribute to add the citation "https://uxdworld.com".
+       The quote and the name should each be a paragraph. -->
+  "A user interface is like a joke. If you have to explain it, it's not that good."
+  - Martin LeBlanc
+
+<!-- End of the <header> -->
+
+<!-- Beginning of the <main> -->
+
+<!-- HORIZONTAL LINE -->
+
+<!-- Beginning of <section>
+     Create a level-3 heading element with ID 'course-header' and no text -->
+
+  <!-- Two separate paragraphs -->
+  Learning to work with the tools and technologies that are used to build and
+  create web sites is both empowering and fun. With these tools, you can build
+  your own web sites and customize the experience of those you visit. You can
+  also create interactive applications for storing and manipulating personal or
+  enterprise data. And you can dynamically generate images and graphics to help
+  visualize data sets.
+
+  The goal of this course is to explore these technologies - HTML, CSS, and
+  Javascript - that define the structure, presentation, and interactions for
+  modern web development. In addition to covering the basics of how to use these
+  tools, we will explore guidelines to ensure the sites we create are accessible
+  for a variety of users, including users with disabilities. After completing
+  this course, you will have a solid foundation to continue learning more
+  advanced web development techniques.
+
+  <!-- Make this a definition list. Format the text as shown in the sample
+       solution image with the link going to the URL shown. For the book title,
+       use the <cite> tag to mark it as a citation. -->
+
+  Website:
+      https://w3.cs.jmu.edu/kirkpams/343
+  Time:
+      M/W/F 9:10 - 10:00 AM
+  Location:
+      King Hall 236
+  Textbook:
+      Fundamentals of Web Development, 3rd Edition
+
+<!-- End of <section> -->
+
+<!-- HORIZONTAL LINE -->
+
+<!-- Beginning of <section> 
+     Create a level-3 heading element with ID 'objectives-header' and no text -->
+
+  <!-- Paragraph -->
+  Following the successful completion of this course, students will be able to:
+
+  <!-- Make this a numbered list and do NOT hard-code the numbers -->
+  1. Summarize the key steps and processes for retrieving and displaying a web page.
+  2. Structure text documents as HTML and publish them on a server.
+  3. Apply accessibility standards to web documents.
+  4. Create and adapt CSS style sheets for consistent web site presentation and styling.
+  5. Use a web framework to create a modern, responsive web site.
+  6. Generate HTML content dynamically with Javascript.
+  7. Create handlers to detect and respond to user input events.
+  8. Store and retrieve data in client-side storage.
+  9. Build images dynamically using provided data.
+  10. Learn to consult a web framework documentation and tutorials for additional help.
+
+<!-- End of <section> -->
+
+<!-- HORIZONTAL LINE -->
+
+<!-- Beginning of <section>
+     Create a level-3 heading element with ID 'labs-header' and no text -->
+
+  <!-- Paragraph -->
+  The lab descriptions are available at the following links:
+
+  <!-- SCRIPT -->
+  // In this script section, use document.write() along with a loop to create an
+  // unordered list. Each list item consists of a link to a lab description for
+  // labs 1 through 10. The link for lab 1 should go to (other labs same except
+  // for the number):
+  //   "https://w3.cs.jmu.edu/kirkpams/343/labs/lab1.shtml"
+
+<!-- End of <section> -->
+
+<!-- HORIZONTAL LINE -->
+
+<!-- Beginning of <section>
+     Create a level-3 heading element with ID 'description-header' and no text -->
+
+  <!-- Paragraph - Note the prerequisite text must be emphasized -->
+  Projects or topics in computer science which are of interest to the lower
+  division student. May be repeated for credit when course content changes.
+  Topics may vary. Prerequisite: Fully admitted Computer Science majors or
+  minors only and students should consult the instructor prior to enrolling
+  for the course.
+
+<!-- End of <section> -->
+
+<!-- End of the <main> -->
+
+<!-- HORIZONTAL LINE -->
+
+<!-- Start of <footer> - set its ID to 'logo-footer' -->
+
+  <!-- Image - set its ID to 'jmu-logo' and no other attributes -->
+
+<!-- End of <footer> -->
+
+<!-- SCRIPT -->
+// IMPORTANT: Keep this line as the first line of your script:
+(function() {
+
+  // Use document.getElementById to select the course, objectives, labs, and
+  // description heading elements (find their ID attributes in the <h3> elements
+  // above). Set their textContent fields to:
+  //   'Course Information'
+  //   'Detailed Course Objectives'
+  //   'Lab Descriptions'
+  //   'Course Catalog Description'
+
+  // YOUR CODE HERE...
+
+
+  // OPTIONAL:
+
+  // Do not modify this line. It sets the color variable to be the URL query string.
+  let color = window.location.search.substring(1);
+
+  // Use document.getElementById to get the footer image and the footer element.
+  // If the color variable (the query string) is set to 'black' change the image
+  // source to 'jmu-logo-rgb-horiz-black.png' and the image alt text to
+  // 'James Madison University logo in black'. If the color variable is 'none',
+  // replace the footer's innerHTML with a paragraph containing the text
+  // 'No logo color specified'.
+
+  // YOUR CODE HERE...
+
+
+// IMPORTANT: Keep this line as the last line of your script:
+})();
+<!-- End of script -->
+
+<!-- End of body and HTML -->

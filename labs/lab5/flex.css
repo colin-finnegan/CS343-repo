@@ -1,0 +1,132 @@
+/* All colors should be rgb(226 232 240) or black. Use an alpha of .175 or .5
+ * to make it slightly lighter/more transparent. Font family should be Arial
+ * with a sans-serif fall-back option. */
+
+/* Use rules only for these selectors as provided: */
+
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(226 232 240 / 0.175);
+	flex-direction: column;
+}
+
+nav {
+	width: 100%;
+	padding: 0.5rem 0;
+	background-color: rgb(0 0 0 / 0.5);
+}
+
+nav > ul {
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+	margin: 0;
+	padding: 8px 0px;
+}
+
+nav a {
+	padding: 0 1rem;
+	color: rgb(226 232 240);
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	padding: 24px 1.5rem;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	width: 74%;
+	padding: 2vh 2%;
+	column-gap: 36px;
+}
+
+main p {
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0 / 0.5);
+	border-radius: 1rem;
+}
+
+
+article {
+	flex-basis: 240px;
+	flex-grow: 1;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	width: 96vw;
+	margin: 0 2rem 1rem;
+	flex-wrap: wrap;
+	flex-basis: auto;
+	margin-top: 1rem;
+}
+
+aside div {
+	border: none;
+}
+
+aside p {
+	padding: 1rem;
+	border-left: 1px solid rgb(0 0 0 / 0.5);
+	border-right: 1px solid rgb(0 0 0 / 0.5);
+	border-bottom: 1px solid rgb(0 0 0 / 0.5);
+	border-top: 0px;
+	border-radius: 0px;
+	flex-basis: 100%;
+	margin: 0;
+	flex-grow: 1;
+}
+
+aside h2 {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	border-left: 1px solid rgb(0 0 0 / 0.5);
+	border-right: 0px;
+	border-bottom: 0px;
+	border-radius: 0px;
+	border-top: 1px solid rgb(0 0 0 / 0.5);
+	margin: 0;
+	flex-grow: 1;
+	flex-basis: 160px;
+}
+
+
+/* Add media queries to adapt styles for screen widths of 992 - 1199 and
+ * less than 991. */
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	main {
+		width: 96vw;
+		padding: 1rem 0;
+	}
+	aside {
+		width: 96vw;
+		margin: 0 19px 1rem;
+	}
+	header {
+		width: 96vw;
+	}
+}
+
+@media (max-width: 991px) {
+	main {
+		width: 100%;
+		padding: 1rem 0;
+	}
+	aside {
+		width: 100%;
+		margin: 0 1rem 1rem;
+	}
+	article {
+		flex-basis: 100%;
+	}
+}

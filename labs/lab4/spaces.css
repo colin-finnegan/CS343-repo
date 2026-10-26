@@ -1,0 +1,87 @@
+@import 'styles.css';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding-left: 1vw;
+  padding-top: 2vh;
+}
+
+nav {
+  display: inline-block;
+  width: calc(15% - 4vw);
+  margin: 1vh 1vw;
+  padding: 0vh 0vw;
+  vertical-align: top;
+  margin-bottom: -20vh;
+}
+
+main {
+  display: inline-block;
+  width: 85%;
+  vertical-align: top;
+  padding: 1vh;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 2vh;
+  padding: 0vw;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+p {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding-left: 1vw;
+  padding-right: 20vw;
+}
+
+section {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+  
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+}
+
+section h2 {
+  margin-bottom: 0;
+  padding: 0vh;
+}
+
+ul {
+  margin-top: 1vh;
+  margin-bottom: 0vh;
+  padding-left: 2vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li {
+  margin-bottom: 0.5vh;
+}
+
+a {
+  display: inline-block;
+  margin-right: 1vw;
+}
+
+section p:last-child {
+  margin-top: 2vh;
+}

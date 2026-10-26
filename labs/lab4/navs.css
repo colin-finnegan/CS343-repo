@@ -1,0 +1,44 @@
+@import 'colors.css';
+
+nav {
+  border: 2px solid;
+  border-radius: 10px;
+  background: rgb(222, 222, 222);
+  margin: 1vh 0vw;
+  padding: 0;
+  margin-left: 1vw;
+}
+
+nav ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0; 
+}
+  
+nav li {
+  text-align: center;
+  border-bottom: 2px solid whitesmoke;
+  padding: 1vh 1vw;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav a {
+  font-weight: bold; 
+  font-family: sans-serif;
+  color: rgb(69, 0, 132);
+  text-decoration: none;
+  display: block;
+}
+  
+nav a:hover {
+  text-decoration: underline;
+}
+
+a:not(nav a) {
+  font-family: 'Times';
+  text-decoration: underline;
+  font-weight: 400;
+}

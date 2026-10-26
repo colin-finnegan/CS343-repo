@@ -1,0 +1,26 @@
+@import 'spaces.css';
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(69, 0, 132);
+  color: rgb(242, 242, 242);
+  border-bottom: 5px solid rgb(218, 204, 230);
+}
+
+section {
+  background: rgb(244, 239, 225);
+  border: 3px solid;
+  border-radius: 15px;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+  
+a:visited {
+  color: purple;
+}

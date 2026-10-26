@@ -1,0 +1,16 @@
+[
+	{"id":"AU","name":"Australia"},
+	{"id":"BRA","name":"Brazil"},
+	{"id":"CMR","name":"Cameroon"},
+	{"id":"CHN","name":"China"},
+	{"id":"FRA","name":"France"},
+	{"id":"GBR","name":"Great Britain"},
+	{"id":"IND","name":"India"},
+	{"id":"IDN","name":"Indonesia"},
+	{"id":"NGA","name":"Nigeria"},
+	{"id":"PAK","name":"Pakistan"},
+	{"id":"RUS","name":"Russia"},
+	{"id":"KOR","name":"South Korea"},
+	{"id":"USA","name":"United States"},
+	{"id":"ZWE","name":"Zimbabwe"}
+]
